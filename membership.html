@@ -38,7 +38,35 @@
             </fieldset>
             <fieldset>
                 <legend> Membership Information </legend>
-                <h4> Add other information and text boxes shown in the completed membership screenshot in the next page <br><br><br><br><br><br></h4>
+                <label for="firstname">First Name:</label>
+                <input type="firstname" name="First Name" id="firstname" autofocus required><br>
+
+                <label for="lastname">Last Name:</label>
+                <input type="lastname" name="Last Name" id="lastname" autofocus required><br>
+
+
+                <label for="address">Address:</label>
+                <input type="address" name="address" id="address" autofocus optional><br>
+
+                <label for="city">City:</label>
+                <input type="city" name="city" id="city" autofocus required><br>
+
+                <label for="state">State:</label>
+                <input type="state" name="state" id="state" autofocus required placeholder="2 character code (ex: Ohio, OH)"><br>
+
+                <label for="zipcode">ZIP Code:</label>
+                <input type="zipcode" name="zipcode" id="zipcode" autofocus required placeholder="5 or 9 digits"><br>
+
+                <label for="phonenumber">Phone Number:</label>
+                <input type="phonenumber" name="phonenumber" id="phonenumber" autofocus required placeholder="Ex: 999-999-9999"><br>
+
+                <label for="memtype">Membership Type:</label>
+                <input type="memtype" name="memtype" id="memtype" autofocus required><br>
+
+
+
+
+
             </fieldset>
 
             <!-- Add the Member Information and Text Boxes shown in the handout -->
@@ -61,7 +89,7 @@
 
     <!-- Add the codes for showing 2022-2023 speakers information to the sidebar as a table format. You can reuse some code in home.html and home.css -->
     <aside>
-        <h3>2022-23 Guest Speakers</h3>
+        <h2>2022-23 Guest Speakers</h2>
         <table>
 
             <tr>
@@ -112,7 +140,7 @@
             </tr>
         </table>
 
-        <h3>Location</h3>
+        <h2>Location</h2>
 
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12312.692128513403!2d-84.7316109!3d39.51058425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88403c490fb6d3ad%3A0x1d5080263c547b36!2sMiami%20University%2C%20Oxford%2C%20OH%2045056!5e0!3m2!1sen!2sus!4v1663355875346!5m2!1sen!2sus" width=90% height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </aside>
