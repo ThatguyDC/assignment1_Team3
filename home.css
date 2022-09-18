@@ -12,7 +12,7 @@ aside {
 }
 
 html {
-    background-color: #5f6c7e;
+    background-color: lightgrey;
 }
 
 body {
@@ -45,7 +45,7 @@ aside {
     float: right;
 }
 
-h1 {
+h1 article {
     font-size: 2em;
     width: 60%;
 
@@ -53,7 +53,7 @@ h1 {
 
 h2 {
     font-size: 1.2em;
-    width: 60%;
+    width: 80%;
 }
 
 a {
@@ -107,7 +107,7 @@ header h1 {
     text-shadow: 2px 3px 0 black;
     margin-left: 120px;
     margin-bottom: 0.25em;
-    line-height: 40px;
+
 
 }
 
@@ -154,6 +154,7 @@ header img {
 /* the styles for the article */
 article {
     width: 560px;
+    height: 100%;
     border-right: 2px solid #ef9c00;
     padding-right: 20px;
     float: right;
@@ -215,12 +216,13 @@ tr:nth-child(even) {
 
 /* the styles for the sidebar */
 aside {
-    width: 40%;
+    width: 38%;
+    height: 100%;
     padding: 0.5rem;
     margin-left: .5rem;
     margin-right: 0rem;
-    border-left: 2px solid #ef9c00;
-    border-width: 4px;
+    border-left: 1px solid #ef9c00;
+    border-width: 3px;
     float: right;
 
 }
