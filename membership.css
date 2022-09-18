@@ -37,6 +37,7 @@ ul {
 
 h1 {
     font-size: 200%;
+
 }
 
 h2 {
@@ -84,20 +85,27 @@ fieldset {
     padding-top: .5em;
     text-align: left;
     line-height: 20px;
+    border: 2px solid green;
+
 
 }
 
 /* add legend, label style here */
 legend {
     text-align: left;
+    color: green;
+
 
 }
+
+
 
 label {
     display: inline-block;
     width: 150px;
     text-align: right;
 }
+
 
 input,
 select {
@@ -108,7 +116,13 @@ select {
 }
 
 /* add input, buttons input style here */
+.required {
+    border: 3px solid red;
+}
 
+.optional {
+    border: 3px solid blue;
+}
 
 /* the styles for the header */
 header {
@@ -164,9 +178,10 @@ header img {
 
 /* the styles for the article */
 article {
-    width: 50%;
-    padding-right: 20px;
+    width: 58%;
+    padding-right: 10px;
     float: left;
+
 }
 
 article h1 {
@@ -182,15 +197,36 @@ article img {
     margin: 0 1.5em 1em 0;
 }
 
+.header {
+    padding-top: 10px;
+
+}
+
+/*Submit and Reset button styling*/
+.submit {
+    width: 20%;
+    margin-left: 29%;
+    display: inline-block;
+
+
+}
+
+.reset {
+    width: 20%;
+    margin-right: 12%;
+    display: inline-block;
+
+}
+
 /* the styles for the sidebar */
 aside {
-    width: 40%;
+    width: 38%;
     height: 100%;
     padding: 0.5rem;
     margin-left: .5rem;
     margin-right: 0rem;
-    border: 2px solid #ef9c00;
-    border-width: 4px;
+    border-left: 1px solid #ef9c00;
+    border-width: 3px;
     float: right;
 
 }
@@ -204,6 +240,7 @@ aside h2 {
     font-size: 100%;
     color: black;
     padding-bottom: .5em;
+    margin-left: 5%;
 }
 
 aside h3 {
@@ -217,21 +254,27 @@ aside p {
 }
 
 table {
-    margin-left: 10%;
-    margin-top: 2%;
-    margin-bottom: 10%;
-    margin: 2% auto 10% 10%;
+    width: 95%;
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
     height: 290px;
     padding-top: 20px;
     border: solid 1px black;
     border-collapse: collapse;
+    float: left;
+
 }
 
-td,
+
 th {
     border: 1px solid #100e0e;
-    text-align: left;
-    padding: 8px;
+    height: 1px;
+}
+
+td {
+    border: 1px solid #100e0e;
+    height: 1px;
 
 }
 
@@ -247,7 +290,8 @@ tr:nth-child(2) {
 }
 
 iframe {
-    margin-left: 10%;
+    margin-left: 5%;
+
 }
 
 /* the styles for the footer */
