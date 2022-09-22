@@ -1,298 +1,172 @@
-/* type selectors */
-article,
-aside,
-figure,
-footer,
-header,
-nav,
-section {
-    display: block;
-}
-
-html {
-    background-image: src="images/brick-wall.jpg";
-}
-
-body {
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 87.5%;
-    width: 962px;
-    background-color: white;
-    margin: 15px auto;
-    padding: 15px 25px;
-    border: 1px solid black;
-}
-
-article,
-aside,
-h1,
-h2,
-p,
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-
-
-h1 {
-    font-size: 200%;
-
-}
-
-h2 {
-    font-size: 125%;
-}
-
-a {
-    font-weight: bold;
-}
-
-a:link {
-    color: green;
-}
-
-a:visited {
-    color: #ef9c00;
-}
-
-a:hover,
-a:focus {
-    color: blue;
-}
-
-ul {
-    margin-left: 1.5em;
-    margin-bottom: 1.5em;
-}
-
-li {
-    padding-bottom: 0.25em;
-}
-
-p {
-    padding-bottom: 0.5em;
-}
-
-em {
-    font-weight: bold;
-}
-
-fieldset {
-    height: 100%;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    padding-top: .5em;
-    text-align: left;
-    line-height: 20px;
-    border: 2px solid green;
-
-
-}
-
-/* add legend, label style here */
-legend {
-    text-align: left;
-    color: green;
-
-
-}
-
-
+<!doctype html>
+<html lang="en">
 
-label {
-    display: inline-block;
-    width: 150px;
-    text-align: right;
-}
-
-
-input,
-select {
-    width: 15em;
-    margin-left: 0.5em;
-    margin-bottom: 0.5em;
-
-}
-
-/* add input, buttons input style here */
-.required {
-    border: 3px solid red;
-}
-
-.optional {
-    border: 3px solid blue;
-}
-
-/* the styles for the header */
-header {
-    padding-bottom: 2em;
-    border-bottom: 2px solid #ef9c00;
-}
-
-header h1 {
-    color: #ef9c00;
-    text-shadow: 2px 3px 0 black;
-    margin-left: 120px;
-    margin-bottom: 0.25em;
-}
-
-header h2 {
-    color: green;
-    font-style: italic;
-    margin-left: 120px;
-}
-
-header img {
-    float: left;
-}
-
-/* the styles for the navigation bar */
-#nav_bar {
-    clear: left;
-    margin: 0;
-    padding: 0;
-    border-bottom: 2px solid #ef9c00;
-}
-
-#nav_bar ul {
-    margin-left: 0;
-    margin-bottom: .5em;
-    list-style: none;
-    padding: .5em 2em 0 0;
-}
-
-#nav_bar li {
-    display: inline;
-    padding: 0 1.5em;
-    border-right: 2px solid black;
-}
-
-#nav_bar a:visited {
-    color: green;
-}
-
-#nav_bar a.current {
-    color: #ef9c00;
-}
-
-/* the styles for the article */
-article {
-    width: 58%;
-    padding-right: 10px;
-    float: left;
-
-}
-
-article h1 {
-    margin-bottom: 0.35em;
-}
-
-article h2 {
-    margin-bottom: 0.35em;
-}
-
-article img {
-    float: left;
-    margin: 0 1.5em 1em 0;
-}
-
-.header {
-    padding-top: 10px;
-
-}
-
-/*Submit and Reset button styling*/
-.submit {
-    width: 20%;
-    margin-left: 29%;
-    display: inline-block;
-
-
-}
-
-.reset {
-    width: 20%;
-    margin-right: 12%;
-    display: inline-block;
-
-}
-
-/* the styles for the sidebar */
-aside {
-    width: 38%;
-    height: 100%;
-    padding: 0.5rem;
-    margin-left: .5rem;
-    margin-right: 0rem;
-    border-left: 1px solid #ef9c00;
-    border-width: 3px;
-    float: right;
-
-}
-
-aside h1 {
-    font-size: 125%;
-    padding-bottom: .5em;
-}
-
-aside h2 {
-    font-size: 100%;
-    color: black;
-    padding-bottom: .5em;
-    margin-left: 5%;
-}
-
-aside h3 {
-    font-size: 100%;
-    padding-bottom: .5em;
-    text-align: left;
-}
-
-aside p {
-    margin-bottom: .5em;
-}
-
-table,
-td,
-th {
-    border: 1px solid #ddd;
-    padding: 5.3px 5px;
-    margin-left: 5%;
-    text-align: center;
-    border-collapse: collapse;
-
-}
-
-iframe {
-    width: 95%;
-    margin-left: 5%;
-}
-
-/*width: 95%;
-    margin-left: 5%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    height: 290px;
-    padding-top: 20px;
-    border: solid 1px black;
-    border-collapse: collapse;
-    float: left;*/
-
-
-
-
-
-
-/* the styles for the footer */
-footer {
-    clear: both;
-    margin-top: 1em;
-    border-top: 2px solid #ef9c00;
-    padding-top: 0.7em;
-}
-
-footer p {
-    font-size: 80%;
-    text-align: right;
-}
+<head>
+    <meta charset="utf-8">
+    <title>Oxford Town Hall</title>
+    <link rel="shortcut icon" href="images/oxford_logo.jpg">
+    <link rel="stylesheet" href="styles/membership.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/oxford.jpg" alt="Town Hall Logo" width="80" height="60">
+        <hgroup>
+            <h1>Oxford Town Hall</h1>
+            <h2>Bringing cutting-edge speakers to Oxford for 78 years!</h2>
+        </hgroup>
+    </header>
+    <nav id="nav_bar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="tickets.html">Get Tickets</a></li>
+            <li><a class="current" href="membership.html">Membership</a></li>
+        </ul>
+    </nav>
+    <article>
+        <div class="header">
+            <h1>Become a Member</h1>
+        </div>
+       <form action="https://formsubmit.co/cowperdr@miamioh.edu" method="POST" name="registration_form" id="registration_form">
+            <fieldset>
+
+                <legend>Registration Information</legend>
+                <label for="email">E-Mail:</label>
+                <input div class="required" type="email" name="email" id="email" autofocus required><br>
+                <label for="password">Password:</label>
+                <input div class="required" type="password" name="password" id="password" required placeholder="At least 8 letter or numbers"><br>
+                <label for="verify">Verify Password:</label>
+                <input div class="required" type="password" name="verify" id="verify" required><br>
+
+            </fieldset>
+            <fieldset>
+                <legend> Membership Information </legend>
+                <label for="firstname">First Name:</label>
+                <input div class="required" type="firstname" name="First Name" id="firstname" autofocus required><br>
+
+                <label for="lastname">Last Name:</label>
+                <input div class="required" type="lastname" name="Last Name" id="lastname" autofocus required><br>
+
+
+                <label for="address">Address:</label>
+                <input div class="optional" type="address" name="address" id="address" autofocus optional><br>
+
+                <label for="city">City:</label>
+                <input div class="optional" type="city" name="city" id="city" autofocus required><br>
+
+                <label for="state">State:</label>
+                <input div class="optional" type="state" name="state" id="state" autofocus required placeholder="2 character code (ex: Ohio, OH)"><br>
+
+                <label for="zipcode">ZIP Code:</label>
+                <input div class="optional" type="zipcode" name="zipcode" id="zipcode" autofocus required placeholder="5 or 9 digits"><br>
+
+                <label for="phonenumber">Phone Number:</label>
+                <input div class="required" type="phonenumber" name="phonenumber" id="phonenumber" autofocus required placeholder="Ex: 999-999-9999"><br>
+
+                <label for="memtype">Membership Type:</label>
+                <select id="memtype" name="Membership Type">
+                    <option value="Platinum">Platinum</option>
+                    <option value="Gold">Gold</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Bronze">Bronze</option>
+                </select>
+
+
+
+
+
+
+            </fieldset>
+
+            <!-- Add the Member Information and Text Boxes shown in the handout -->
+
+            <fieldset id="buttons">
+                <legend>Submit Your Membership</legend>
+
+                <input div class="submit" type="submit" id="submit" value="Submit">
+
+                <!-- Add reset button here -->
+
+
+                <input div class="reset" type="submit" id="reset" value="Reset">
+
+            </fieldset>
+        </form>
+    </article>
+
+
+
+    <!-- Add the codes for showing 2022-2023 speakers information to the sidebar as a table format. You can reuse some code in home.html and home.css -->
+    <aside>
+        <h2>2022-23 Guest Speakers</h2>
+        <table>
+
+            <tr>
+
+                <th>Date</th>
+                <th>Speakers</th>
+                <th>Price</th>
+
+            </tr>
+
+            <tr>
+
+                <td>August 19, 2022:</td>
+                <td>Jeffrey Toobin</td>
+                <td>$40</td>
+
+
+            </tr>
+
+            <tr>
+                <td>October 26, 2022: </td>
+                <td>Andrew Ross Sorkin</td>
+                <td>$50</td>
+
+            </tr>
+            <tr>
+                <td>March 18, 2023: </td>
+                <td>Amy Chua</td>
+                <td>$50</td>
+
+            </tr>
+            <tr>
+                <td>June 25, 2023: </td>
+                <td>Scott Sampson</td>
+                <td>$50</td>
+
+            </tr>
+            <tr>
+                <td>August 21, 2023:</td>
+                <td>Carlos Eire</td>
+                <td>$55</td>
+
+            </tr>
+            <tr>
+                <td>September 18, 2023:</td>
+                <td>Ronan Tynan</td>
+                <td>$50</td>
+
+            </tr>
+        </table>
+
+        <h2>Location</h2>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12312.692128513403!2d-84.7316109!3d39.51058425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88403c490fb6d3ad%3A0x1d5080263c547b36!2sMiami%20University%2C%20Oxford%2C%20OH%2045056!5e0!3m2!1sen!2sus!4v1663355875346!5m2!1sen!2sus" width=95% height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </aside>
+    <!-- Add Location header and Google Map here -->
+
+
+
+    <footer>
+        <p>&copy; Copyright <span id="year"> </span> Oxford Town Hall.</p>
+        <script>
+            var d = new Date();
+            document.getElementById("year").innerHTML = d.getFullYear();
+
+        </script>
+    </footer>
+</body>
+
+</html>
