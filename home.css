@@ -1,5 +1,4 @@
 /* type selectors */
-
 article,
 section,
 figure,
@@ -8,23 +7,21 @@ header,
 nav,
 aside {
     display: block;
-
+   
 }
 
 html {
-    background-color: white;
+    background-image: -moz-linear-gradient(top, white 0%, #facd8a 100%);
 }
 
 body {
     font-family: Verdana, Arial, Helvetica, sans-serif;
-
+    font-size: 87.5%;
     width: 962px;
     background-color: white;
     margin: 15px auto;
     padding: 15px 25px;
     border: 1px solid black;
-
-
 }
 
 section,
@@ -37,6 +34,13 @@ ul {
     padding: 0;
 }
 
+section h1 {
+    margin-bottom: 0.35em;
+}
+section h2 {
+    margin-bottom: 0.35em;
+}
+
 section,
 aside {
     margin-top: 1.5em;
@@ -45,15 +49,14 @@ aside {
     float: right;
 }
 
-h1 article {
+h1 {
     font-size: 2em;
     width: 60%;
-
 }
 
 h2 {
     font-size: 1.2em;
-    width: 80%;
+    width: 60%;
 }
 
 a {
@@ -61,7 +64,7 @@ a {
 }
 
 a:link {
-    color: green;
+    color: #ef9c00;
 }
 
 a:visited {
@@ -71,7 +74,7 @@ a:visited {
 
 a:hover,
 a:focus {
-    color: #ef9c00;
+    color: blue;
 }
 
 ul {
@@ -86,8 +89,8 @@ li {
 p {
     padding-bottom: 0.5em;
     width: 55%;
-
-
+    
+    
 }
 
 em {
@@ -99,7 +102,7 @@ em {
 header {
     padding-bottom: 2em;
     border-bottom: 2px solid #ef9c00;
-
+    line-height: 40px;
 }
 
 header h1 {
@@ -107,8 +110,8 @@ header h1 {
     text-shadow: 2px 3px 0 black;
     margin-left: 120px;
     margin-bottom: 0.25em;
-
-
+    line-height: 40px;
+    
 }
 
 header h2 {
@@ -148,28 +151,26 @@ header img {
 }
 
 #nav_bar a.current {
-    color: black;
+    color: #ef9c00;
 }
 
 /* the styles for the article */
 article {
     width: 560px;
-    height: 100%;
     border-right: 2px solid #ef9c00;
     padding-right: 20px;
     float: right;
-
 }
 
 article h1 {
     margin-bottom: 0.35em;
     width: 70%;
-
+    
 }
 
 article h2 {
     margin-bottom: 0.35em;
-    width: 70%;
+        width: 70%;
     line-height: 40px;
 
 }
@@ -177,65 +178,68 @@ article h2 {
 article img {
     float: left;
     margin: 0 1.5em 1em 0;
-    width: 70%;
+        width: 70%;
 
 }
 
 iframe {
     float: left;
-    margin-right: 30px;
-
-
+    padding-top: 20px;
+    
+    
 }
-
-table,
-td,
-th {
-    border: 1px solid #100e0e;
-    text-align: center;
-    padding: 8px;
+table {
+    margin: auto;
+    width: 25%;
+    height: 320px;
+    padding-top: 20px;
+    margin-top: 25px;
+    border: solid 1px black;
     border-collapse: collapse;
+    text-align: center;
+}
+    
+td, th {
+  border: 1px solid #100e0e;
+  text-align: center;
+  padding: 8px;
+  
 }
 
-.table a {
-    text-decoration: none;
-}
+
 
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+  background-color: #dddddd;
+    
 }
+
 
 /* the styles for the sidebar */
 aside {
     width: 360px;
     padding-left: 20px;
     border-left: 2px solid #ef9c00;
+    border-width: 4px;
     float: right;
-
+    
 }
 
 aside h1 {
-    font-size: 1.2em;
-    padding-bottom: 0.5em;
+    font-size: 125%;
+    padding-bottom: .5em;
 }
 
 aside h2 {
-    font-size: 1em;
+    font-size: 100%;
     color: green;
-    padding-bottom: 0.5em;
+    padding-bottom: .5em;
 }
 
 aside p {
-    margin-bottom: 0.5em;
+    margin-bottom: .5em;
 }
-
-contact_us id {
-    margin-top: 1em;
-}
-
-/*styles for classes here*/
-a.date_passed {
-    color: gray;
+aside li {
+    float: left;    
 }
 
 /* the styles for the footer */
